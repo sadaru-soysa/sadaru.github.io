@@ -1,82 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="stili.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/nav-bar/logo.png">
     <title>Sadaru Soysa</title>
   </head>
   <body>
-    <!--Nav bar-->
-    <nav>
-      <img class="logo" src="img/logo.png" alt="logo">
-      <ul>
-        <li><a href="#"></a> About me</li>
-        <li><a href="#portfolio-titolo">Portfolio</a></li>
-        <li><a href="#my-skills">Skills</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-      </ul>
-    </nav>
+    <!--NAVIGAZIONE-->
+    <div class="nav">
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle"/>
+      <div class="menu">
+        <img class="logo" src="img/nav-bar/logo.png" height="50px" alt="">
+        <a href="#">Portfolio</a>
+        <a href="#">Skills</a>
+        <a href="#">Contacts</a>
+        <a href="#"><span>Form</span></a>
+      </div>
+    </div>
 
-    <!--Index-->
-    <p class="prova">Hi! I am <br> Sadaru Soysa</p>
-    <img class="caricatura" src="img/caricatura.jpg"alt="caricatura">
-    <p class="testo-home">I am a <strong><em>Graphic Designer</em></strong> and <br> a <strong><em>Full Stack Development Student</em></strong> based in Milan</p>
+    <!--HOME-->
+    <div class="home">
+      <h1>Hi! I am <br> Sadaru Soysa</h1> <br>
+      <p>I am a <em><strong>Graphic Designer</strong> </em> and <br> a <em><strong>Full Stack Development Student</strong></em> based in Milan</p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/Sadaru-Soysa"target="_blank"><img src="img/icone-social/facebook-logo.png"alt="fb"></a>
+      <a href="https://github.com/Sadaru-Soysa"target="_blank"><img src="img/icone-social/git.png"height="64px"weight="64px" alt="git"></a>
+      <a href="https://www.instagram.com/sadaru.soysa_/"target="_blank"><img src="img/icone-social/instagram-logo.png"height="64px"weight="64px" alt="insta"></a>
+      <a href="https://www.pinterest.it/sadarusoysa/"target="_blank"><img src="img/icone-social/pinterest.png"height="64px"weight="64px" alt="pinterest"></a>
+    </div>
+    <img class="caricatura" src="img/header/caricatura.png">
 
-    <!--Social-->
-    <a href="https://www.facebook.com/Sadaru-Soysa"target="_blank"><img class="facebook" src="img/facebook-logo.png" alt="fb"></a>
-    <a href="https://github.com/Sadaru-Soysa"target="_blank"><img class="github" src="img/git.png" alt="git"></a>
-    <a href="https://www.instagram.com/sadaru.soysa_/"target="_blank"><img class="instagram" src="img/instagram-logo.png" alt="insta"></a>
-    <a href="https://www.pinterest.it/sadarusoysa/"target="_blank"><img class="pinterest" src="img/pinterest.png" alt="pinterest"></a>
+    <!--PORTFOLIO-->
+    <div class="lavori">
+      <img src="img/portfolio/paesaggio-surreale.png" alt="">
+      <img src="img/portfolio/muro-di-berlino.png" alt="">
+      <img src="img/portfolio/iorestoacasa.png" alt="">
+    </div>
 
-    <!--Portfolio-->
-    <img class="desk" src="img/desk.png" alt="desk">
-    <p class="Portfolio-titolo"><a name="portfolio-titolo">Portfolio</a></p>
-    <img class="paesaggio-surreale" src="img/paesaggio-surreale.png" alt="paesaggio">
-    <img class="muro-di-berlino"src="img/muro-di-berlino.png" alt="muro">
-    <img class="iorestoacasa"src="img/iorestoacasa.png" alt="covid">
-    <a href="portfolio/portfolio.pdf"target="_blank"><p class="see-more">See more</p></a>
-
-    <!--Skill-->
-    <img class="work" src="img/work.png" alt="work">
-    <p class="my-skills"><a name="my-skills"></a>My Skills</p>
-    <h1 class="percentuale">75%</h1>
-    <h1 class="percentuale2">85%</h1>
-    <h1 class="percentuale3">75%</h1>
-    <h1 class="percentuale4">70%</h1>
-    <h1 class="percentuale5">70%</h1>
-    <h1 class="percentuale6">60%</h1>
-    <img class="illustrator" src="img/illustrator.png" alt="illustrator">
-    <img class="indesign" src="img/indesign.png" alt="indesign">
-    <img class="photoshop" src="img/photoshop.png" alt="photoshop">
-    <img class="premiere" src="img/premiere.png" alt="premiere">
-    <img class="html" src="img/html.png" alt="html">
-    <img class="css" src="img/css.png" alt="css">
-
-    <!--Contatti-->
-    <h1 class="testo"><a name="contacts"></a>Get in touch!</h1>
-    <p class="form-text">Want to contact me for a project work? <br> Here are my all contacts. <br> Feel free to contact me whenever you want.  <br>See you in a new and cool project!</p>
-
-    <img class="phone" src="img/phone.png" alt="cell">
-    <p class="numero">+39 3276229470</p>
-
-    <img class="email" src="img/email.png" alt="email">
-    <p class="email-address">ssoysa73@gmail.com</p>
-
-    <img class="maps" src="img/google-maps.png" alt="maps">
-    <p class="address">Via Palmanova, 133 20132 Milano MI</p>
-
-    <!--Form-->
-    <form class="form" action="index.html" method="post">
-      <input class="username" type="text" placeholder="username">
-      <input class="email-area" type="email" placeholder="email">
-      <textarea class="text-area" name="name" rows="8" cols="80" placeholder="Message..."></textarea>
-      <button type="submit" name="button"></button>
-    </form>
-
-
-
-    <!--Footer-->
-    <footer class="footer_bar"></footer>
+    <div class="bg-image" style="
+      background-image: url('img/portfolio/desk-pc.png');height: 100vh;">
+    </div>
   </body>
 </html>
