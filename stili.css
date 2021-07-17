@@ -59,7 +59,7 @@ label {
   height: 500px;
   width: 500px;
   position: relative;
-  top: 150px;
+  top: 70px;
   float: right;
   margin-right: 10%;
 }
@@ -71,13 +71,13 @@ label {
   text-align: left;
   position: absolute;
   left: 110.578px;
-  top: 400px;
+  top: 300px;
 }
 
 .social img{
   position: relative;
-  left: 110px;
-  top: 620px;
+  left: 100px;
+  top: 490px;
   height: 64px;
   padding: 4px;
 }
@@ -85,17 +85,46 @@ label {
 /*PORTFOLIO*/
 .bg-image{
   position: relative;
-  top: 400px;
+  top: 715px;
 }
 
-.lavori img{
+div.picwrapper{
+  text-align: center;
+  height: 100px;
+}
+
+.picwrapper img{
   position: relative;
   width: 400px;
   z-index: 1;
-  top: 1200px;
-  left: 320px;
+  top: 10px;
   padding: 10px;
   border-radius: 40px;
+  display: inline-block;
+}
+
+.view-more{
+  font-size: 15px;
+  font-family: "Montserrat";
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  top: 520px;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:link{
+  text-decoration: none;
+  color: white;
+}
+
+a:active{
+  color:white;
 }
 
 /* Mobile Styles */
@@ -154,8 +183,8 @@ label {
     position: relative;
     top: 800px;
   }
-  .lavori img{
-    top: 1000px;
+  .picwrapper img{
+    top: 1100px;
     left: 40px;
     width: 300px;
     position: absolute;
