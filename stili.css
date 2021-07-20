@@ -13,6 +13,20 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:link{
+  text-decoration: none;
+  color: white;
+}
+
+a:active{
+  color:white;
+}
+
 /*NAVIGAZIONE*/
 .nav {
     background-color: rgb(60, 72, 87);
@@ -54,16 +68,6 @@ label {
 }
 
 /*HOME*/
-.caricatura{
-  max-width: 600px;
-  height: 500px;
-  width: 500px;
-  position: relative;
-  top: 70px;
-  float: right;
-  margin-right: 10%;
-}
-
 .home{
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -82,10 +86,38 @@ label {
   padding: 4px;
 }
 
-/*PORTFOLIO*/
-.bg-image{
+.caricatura{
+  max-width: 600px;
+  height: 500px;
+  width: 500px;
   position: relative;
-  top: 715px;
+  top: 70px;
+  float: right;
+  margin-right: 10%;
+}
+
+/*PORTFOLIO*/
+.portfolio-titolo{
+  position: absolute;
+  top: 60px;
+  left: 240px;
+  color: white;
+  z-index: 3;
+  font-size: 100px;
+  text-shadow: 2px 2px 12px black;
+}
+
+.hero-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 950px;
+  background: url(img/portfolio/desk-pc.png) no-repeat;
+  z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 div.picwrapper{
@@ -96,46 +128,62 @@ div.picwrapper{
 .picwrapper img{
   position: relative;
   width: 400px;
-  z-index: 1;
-  top: 10px;
+  z-index: 9;
+  top: 210px;
   padding: 10px;
   border-radius: 40px;
   display: inline-block;
 }
 
-.view-more{
-  font-size: 15px;
-  font-family: "Montserrat";
+.work{
   position: relative;
-  color: white;
-  text-align: center;
+  height: 500px;
   z-index: 1;
-  top: 520px;
+  top: 700px;
+  bottom: 900px;
+  left: 20px;
 }
 
-a:visited {
-  color: white;
-  text-decoration: none;
+.bottone {
+ display: inline-block;
+ font-family: "Montserrat", sans-serif;
+ text-decoration: none;
+ font-size: 16px;
+ background-color: #F2D06B;
+ border-radius: 70px;
+ padding: 10px 20px;
+ cursor: pointer;
+ z-index: 10;
+ position: absolute;
+ top: 800px;
+ left: 880px;
+}
+.bottone:hover {
+ background-color: #E8AE1C;
+}
+.bottone > strong {
+ font-size: 16px;
 }
 
-a:link{
-  text-decoration: none;
-  color: white;
+.work{
+  position: absolute;
+  height: 400px;
+  top: 2000px;
+  left: 240px;
+  z-index: 1;
 }
 
-a:active{
-  color:white;
+.skills-titolo{
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  position: relative;
+  left: 900px;
+  top: 1800px;
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
-  body{
-    background-color:; /* azzurro */
-  }
-  label {
-      display: block;
-      cursor: pointer;
-  }
+  /*NAVIGAZIONE*/
   .menu {
       text-align: center;
       width: 100%;
@@ -147,6 +195,10 @@ a:active{
       margin: 0;
       color: black;
   }
+  label {
+      display: block;
+      cursor: pointer;
+  }
   #toggle:checked + .menu {
       display: block;
   }
@@ -157,13 +209,7 @@ a:active{
       height: 45px;
       display: block;
   }
-  .caricatura{
-    height: 300px;
-    width: 300px;
-    position: relative;
-    top: 50px;
-    margin-right: 4,5vh;
-  }
+  /*HOME*/
   .home{
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
@@ -179,17 +225,69 @@ a:active{
     top: 580px;
     z-index: 1;
   }
-  .bg-image{
+  .caricatura{
+    height: 300px;
+    width: 300px;
     position: relative;
-    top: 800px;
+    top: 50px;
+    margin-right: 4,5vh;
+  }
+  /*PORTFOLIO*/
+  .portfolio-titolo{
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    color: white;
+    z-index: 3;
+    font-size: 60px;
+    text-shadow: 2px 2px 12px black;
+  }
+  .hero-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 950px;
+    background: url(img/portfolio/desk-pc.png) no-repeat;
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   .picwrapper img{
-    top: 1100px;
-    left: 40px;
-    width: 300px;
+    top: 170px;
+    left: 25px;
+    width: 330px;
     position: absolute;
   }
+  .bottone {
+   display: inline-block;
+   text-align: center;
+   font-family: "Montserrat", sans-serif;
+   white-space: nowrap;
+   color: #FFFFFF;
+   text-decoration: none;
+   line-height: 1.2;
+   font-weight: normal;
+   font-family: sans-serif;
+   font-size: 16px;
+   background-color: #F2D06B;
+   border-radius: 70px;
+   padding: 10px 20px;
+   cursor: pointer;
+   position: absolute;
+   top: 700px;
+   left: 130px;
+   z-index: 19;
+  }
+  .bottone:hover {
+   background-color: #E8AE1C;
+  }
+  .bottone > strong {
+   font-size: 16px;
+  }
 }
+
 
 /* Tablet Styles */
 @media only screen and (max-width: 768px) {
