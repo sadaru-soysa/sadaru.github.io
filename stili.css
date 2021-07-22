@@ -166,19 +166,53 @@ div.picwrapper{
 }
 
 .work{
-  position: absolute;
-  height: 400px;
+  position: relative;
   top: 2000px;
-  left: 240px;
-  z-index: 1;
+  left: 200px;
+  background-repeat: no-repeat;
+  background-size: 30% 90%;
 }
 
 .skills-titolo{
-  font-family: "Montserrat", sans-serif;
-  font-size: 25px;
+  position: absolute;
+  top: 2035px;
+  left: 955px;
+  float: right;
+  font-size: 60px;
+}
+
+.programmi-1 img{
   position: relative;
-  left: 900px;
-  top: 1800px;
+  padding: 2px;
+  height: 90px;
+  left: 959px;
+  top: 1500px;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.programmi-1 h1{
+  float: right;
+  top: 1365px;
+  right: 770px;
+  position: relative;
+}
+
+.programmi-2 img{
+  position: relative;
+  padding: 2px;
+  height: 90px;
+  left: 1300px;
+  top: 1020px;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.programmi-2 h1{
+  float: right;
+  top: 890px;
+  right: 420px;
+  position: relative;
 }
 
 /* Mobile Styles */
@@ -285,6 +319,49 @@ div.picwrapper{
   }
   .bottone > strong {
    font-size: 16px;
+  }
+  .skills-titolo{
+    position: absolute;
+    top: 1820px;
+    left: 77px;
+    z-index: 3;
+    font-size: 50px;
+  }
+  .work{
+    position: absolute;
+    top: 1930px;
+    left: 7px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: 30% 90%;
+  }
+  .programmi-1 img{
+    padding: 2px;
+    height: 60px;
+    left: 20px;
+    top: 1900px;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .programmi-2 img{
+    padding: 2px;
+    height: 60px;
+    left: 220px;
+    top: 1630px;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .programmi-1 h1{
+    float: right;
+    top: 1820px;
+    right: 210px;
+    position: relative;
+  }
+  .programmi-2 h1{
+    float: right;
+    top: 1550px;
+    right: 10px;
+    position: relative;
   }
 }
 
