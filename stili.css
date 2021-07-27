@@ -214,9 +214,95 @@ div.picwrapper{
   right: 420px;
   position: relative;
 }
+/* Form */
+
+.container{
+  max-width: 800px;
+  height: 600px;
+  background: #fff;
+  margin: 1500px auto;
+  margin-bottom: 500px;
+  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.container p{
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #486255;
+}
+
+.input,
+.msg .area{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+
+.login .input{
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+.login .input:last-child{
+  margin-right: 0;
+}
+
+.msg .area{
+  height: 200px;
+}
+
+.btn{
+  width: 250px;
+  background: #486255;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.input:focus,
+.msg .area:focus{
+  border: 2px solid #486255;
+}
+
+::-webkit-input-placeholder{
+  font-family: "Montserrat", sans-serif;
+}
+
+::-moz-input-placeholder{
+  font-family: "Montserrat", sans-serif;
+}
+
+::-ms-input-placeholder{
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer {
+   position:absolute;
+   top: 3700px;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background: rgb(60, 72, 87);
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
+
   /*NAVIGAZIONE*/
   .menu {
       text-align: center;
@@ -362,6 +448,16 @@ div.picwrapper{
     top: 1550px;
     right: 10px;
     position: relative;
+  }
+  .container{
+    max-width: 800px;
+    height: 600px;
+    background: #fff;
+    margin: 1900px auto;
+    margin-bottom: 500px;
+    box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+    box-sizing: border-box;
+    padding: 40px;
   }
 }
 
