@@ -8,6 +8,7 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 html {
     font-family: "Montserrat", sans-serif;
@@ -57,17 +58,28 @@ label {
     float: right;
     color: white;
 }
+
 #toggle {
     display: none;
 }
 
 .logo{
-  position: relative;
+  position: absolute;
   float: left;
   margin: 10px 0 0 20px;
 }
 
 /*HOME*/
+.caricatura{
+  max-width: 600px;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  top: 70px;
+  float: right;
+  margin-right: 10%;
+}
+
 .home{
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -86,27 +98,7 @@ label {
   padding: 4px;
 }
 
-.caricatura{
-  max-width: 600px;
-  height: 500px;
-  width: 500px;
-  position: relative;
-  top: 70px;
-  float: right;
-  margin-right: 10%;
-}
-
 /*PORTFOLIO*/
-.portfolio-titolo{
-  position: absolute;
-  top: 60px;
-  left: 240px;
-  color: white;
-  z-index: 3;
-  font-size: 100px;
-  text-shadow: 2px 2px 12px black;
-}
-
 .hero-image{
   position: absolute;
   width: 100%;
@@ -118,6 +110,16 @@ label {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.portfolio-titolo{
+  position: absolute;
+  top: 60px;
+  left: 240px;
+  color: white;
+  z-index: 3;
+  font-size: 100px;
+  text-shadow: 2px 2px 12px black;
 }
 
 div.picwrapper{
@@ -150,7 +152,7 @@ div.picwrapper{
  text-decoration: none;
  font-size: 16px;
  background-color: #F2D06B;
- border-radius: 70px;
+ border-radius: 5px;
  padding: 10px 20px;
  cursor: pointer;
  z-index: 10;
@@ -194,7 +196,7 @@ div.picwrapper{
 .programmi-1 h1{
   float: right;
   top: 1365px;
-  right: 770px;
+  right: 765px;
   position: relative;
 }
 
@@ -202,7 +204,7 @@ div.picwrapper{
   position: relative;
   padding: 2px;
   height: 90px;
-  left: 1300px;
+  left: 1345px;
   top: 1020px;
   display: flex;
   margin-bottom: 70px;
@@ -211,7 +213,7 @@ div.picwrapper{
 .programmi-2 h1{
   float: right;
   top: 890px;
-  right: 420px;
+  right: 380px;
   position: relative;
 }
 /* Form */
@@ -222,7 +224,7 @@ div.picwrapper{
   background: #fff;
   margin: 1500px auto;
   margin-bottom: 500px;
-  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  box-shadow: 0 0 20px rgb(60,72,87,0.6);
   box-sizing: border-box;
   padding: 40px;
 }
@@ -232,7 +234,7 @@ div.picwrapper{
   letter-spacing: 1px;
   font-size: 45px;
   margin-bottom: 20px;
-  color: #486255;
+  color: rgb(60, 72, 87);
 }
 
 .input,
@@ -264,7 +266,7 @@ div.picwrapper{
 
 .btn{
   width: 250px;
-  background: #486255;
+  background: rgb(60, 72, 87);
   height: 50px;
   line-height: 50px;
   text-align: center;
@@ -298,32 +300,63 @@ div.picwrapper{
    width:100%;
    height:60px;   /* Height of the footer */
    background: rgb(60, 72, 87);
+   color: white;
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 20px;
+   padding-top: 35px;
+}
+
+div .footer {
+   position:absolute;
+   top: 3600px;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background: rgb(60, 72, 87);
+   color: white;
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 20px;
+   padding-top: 35px;
+}
+
+div .img-container{
+  text-align: center;
+  height: 100px;
+  padding-top: 25px;
+}
+
+.img-container div{
+  color: black;
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
 
-  /*NAVIGAZIONE*/
+  /* NAVIGAZIONE */
   .menu {
       text-align: center;
       width: 100%;
       display: none;
   }
   .menu a {
+      position: relative;
       display: block;
       border-bottom: 1px solid #EAEAEB;
       margin: 0;
       color: black;
+      z-index: 1;
   }
   label {
       display: block;
       cursor: pointer;
   }
+
   #toggle:checked + .menu {
       display: block;
   }
   .menu a:last-of-type{
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
   .logo {
       height: 45px;
@@ -392,7 +425,7 @@ div.picwrapper{
    font-family: sans-serif;
    font-size: 16px;
    background-color: #F2D06B;
-   border-radius: 70px;
+   border-radius: 5px;
    padding: 10px 20px;
    cursor: pointer;
    position: absolute;
@@ -449,15 +482,80 @@ div.picwrapper{
     right: 10px;
     position: relative;
   }
+  /* Form */
   .container{
-    max-width: 800px;
+    max-width:800px;
     height: 600px;
     background: #fff;
     margin: 1900px auto;
     margin-bottom: 500px;
-    box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+    box-shadow: 0 0 20px rgba(60,72,87,0.6);
     box-sizing: border-box;
     padding: 40px;
+  }
+  .container p{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 43px;
+    margin-bottom: 20px;
+    color: rgb(60, 72, 87);
+  }
+
+  .input,
+  .msg .area{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid #e9eaea;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+    transform: all 0.5s ease;
+  }
+
+  .login .input{
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+  }
+
+  .login .input:last-child{
+    margin-right: 0;
+  }
+
+  .msg .area{
+    height: 250px;
+  }
+
+  .btn{
+    width: 250px;
+    background: rgb(60, 72, 87);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .input:focus,
+  .msg .area:focus{
+    border: 2px solid #486255;
+  }
+
+  ::-webkit-input-placeholder{
+    font-family: "Montserrat", sans-serif;
+  }
+
+  ::-moz-input-placeholder{
+    font-family: "Montserrat", sans-serif;
+  }
+
+  ::-ms-input-placeholder{
+    font-family: "Montserrat", sans-serif;
   }
 }
 
