@@ -143,12 +143,12 @@ a {
 }
 
 .caricatura{
-  max-width: 600px;
-  height: 500px;
-  width: 500px;
   position: relative;
-  top: 140px;
   float: right;
+  max-width: 37.5rem;
+  height: 31.25rem;
+  width: 31.25rem;
+  top: 8.75rem;
   margin-right: 10%;
 }
 
@@ -211,8 +211,9 @@ div.picwrapper{
  cursor: pointer;
  z-index: 10;
  position: absolute;
- top: 800px;
+ top: 1800px;
  left: 880px;
+ z-index: 4:
 }
 .bottone:hover {
  background-color: #E8AE1C;
@@ -319,17 +320,22 @@ div.picwrapper{
   height: 200px;
 }
 
-.btn{
-  width: 250px;
+.btn input{
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  height: 100%;
+  width: 50%;
   background: rgb(60, 72, 87);
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 5px;
-  margin: 0 auto;
-  color: #fff;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+div .btn{
+  text-align: center;
 }
 
 .input:focus,
@@ -378,7 +384,7 @@ div .footer {
 div .img-container{
   text-align: center;
   height: 100px;
-  padding-top: 25px;
+  padding-top: 35px;
 }
 
 .img-container div{
