@@ -381,16 +381,6 @@ div .footer {
    padding-top: 35px;
 }
 
-div .img-container{
-  text-align: center;
-  height: 100px;
-  padding-top: 35px;
-}
-
-.img-container div{
-  color: black;
-}
-
 @media (min-width: 48em) {
   .header li {
     float: left;
