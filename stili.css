@@ -1,0 +1,631 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white;
+}
+
+/* header */
+.header {
+  background-color: rgb(60, 72, 87);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background: rgb(32 45 62);
+}
+
+.header .logo {
+  position: absolute;
+  top: 4px;
+  left: 15px;
+  height: 50px;
+}
+
+/* menu */
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  background: rgb(60, 72, 87);
+}
+
+/* menu icon */
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/*HOME*/
+.home{
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  line-height: 1.162;
+  text-align: left;
+  position: absolute;
+  left: 110.578px;
+  top: 300px;
+}
+
+.social img{
+  position: relative;
+  left: 100px;
+  top: 560px;
+  height: 64px;
+  padding: 4px;
+}
+
+.caricatura{
+  position: relative;
+  float: right;
+  max-width: 37.5rem;
+  height: 31.25rem;
+  width: 31.25rem;
+  top: 8.75rem;
+  margin-right: 10%;
+}
+
+/*PORTFOLIO*/
+.hero-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(portfolio/img/desk-pc.png) no-repeat;
+  z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-titolo{
+  position: absolute;
+  top: 120px;
+  left: 240px;
+  color: white;
+  z-index: 3;
+  font-size: 100px;
+  text-shadow: 2px 2px 12px black;
+}
+
+div.picwrapper{
+  text-align: center;
+  height: 100px;
+}
+
+.picwrapper img{
+  position: relative;
+  width: 400px;
+  z-index: 9;
+  top: 260px;
+  padding: 10px;
+  border-radius: 40px;
+  display: inline-block;
+}
+
+/*SKILLS*/
+
+.work{
+  position: absolute;
+  height: 500px;
+  top: 250px;
+  bottom: 900px;
+  left: 250px;
+  background-repeat: no-repeat;
+  background-size: 30% 90%;
+}
+
+.bottone {
+ display: inline-block;
+ font-family: "Montserrat", sans-serif;
+ text-decoration: none;
+ font-size: 16px;
+ background-color: #F2D06B;
+ border-radius: 5px;
+ padding: 10px 20px;
+ cursor: pointer;
+ z-index: 10;
+ position: absolute;
+ top: 850px;
+ left: 900px;
+ z-index: 4:
+}
+.bottone:hover {
+ background-color: #E8AE1C;
+}
+.bottone > strong {
+ font-size: 16px;
+}
+
+.skills-titolo{
+  position: absolute;
+  top: 235px;
+  left: 990px;
+  float: right;
+  font-size: 60px;
+}
+
+.box{
+  display: flex;
+  align-items:center;
+  left: 995px;
+  top: 350px;
+  position: absolute;
+}
+
+.box span{
+  left: 400px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+.box-2{
+  display: flex;
+  align-items:center;
+  left: 995px;
+  top: 500px;
+  position: absolute;
+}
+
+.box-2 span{
+  left: 400px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+.box-3{
+  display: flex;
+  align-items:center;
+  left: 995px;
+  top: 660px;
+  position: absolute;
+}
+
+.box-3 span{
+  left: 400px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+.box-4{
+  display: flex;
+  align-items:center;
+  left: 1250px;
+  top: 350px;
+  position: absolute;
+}
+
+.box-4 span{
+  left: 400px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+.box-5{
+  display: flex;
+  align-items:center;
+  left: 1250px;
+  top: 500px;
+  position: absolute;
+}
+
+.box-5 span{
+  left: 400px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+.box-6{
+  display: flex;
+  align-items:center;
+  left: 1250px;
+  top: 660px;
+  position: absolute;
+}
+
+.box-6 span{
+  left: 400px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+/*FORM*/
+.container{
+  top: 200px;
+  left: 550px;
+  position: relative;
+  max-width: 800px;
+  height: 600px;
+  background: #fff;
+  box-shadow: 0 0 20px rgb(60,72,87,0.6);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.container p{
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 43px;
+  margin-bottom: 20px;
+  color: rgb(60, 72, 87);
+}
+
+.input,
+.msg .area{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+
+.login .input{
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+.login .input:last-child{
+  margin-right: 0;
+}
+
+.msg .area{
+  height: 200px;
+}
+
+.btn input{
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  height: 100%;
+  width: 50%;
+  background: rgb(60, 72, 87);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+div .btn{
+  text-align: center;
+}
+
+.input:focus,
+.msg .area:focus{
+  border: 2px solid #486255;
+}
+
+::-webkit-input-placeholder{
+  font-family: "Montserrat", sans-serif;
+}
+
+::-moz-input-placeholder{
+  font-family: "Montserrat", sans-serif;
+}
+
+::-ms-input-placeholder{
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer {
+   position:absolute;
+   top: 3700px;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background: rgb(60, 72, 87);
+   color: white;
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 20px;
+   padding-top: 35px;
+}
+
+div .footer {
+   position:absolute;
+   top: 3600px;
+   width:100%;
+   height:60px;
+   background: rgb(60, 72, 87);
+   color: white;
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 20px;
+   padding-top: 35px;
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px){
+  /*LOGO*/
+  .header .logo {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    height: 40px;
+  }
+  /*HOME*/
+  .home{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    top: 480px;
+    left: 0;
+  }
+  .social img{
+    height: 1.875rem;
+    position: relative;
+    text-align: center;
+    left: 7.5rem;
+    top: 40rem;
+    z-index: 1;
+  }
+  .caricatura{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 100px;
+    margin-right: 4,5vh;
+  }
+  /*PORTFOLIO*/
+  .portfolio-titolo{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    color: white;
+    z-index: 3;
+    font-size: 60px;
+    text-shadow: 2px 2px 12px black;
+  }
+  .hero-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(portfolio/img/desk-pc.png) no-repeat;
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .picwrapper img{
+    top: 190px;
+    left: 25px;
+    width: 330px;
+    position: absolute;
+  }
+  .bottone {
+   display: inline-block;
+   text-align: center;
+   font-family: "Montserrat", sans-serif;
+   white-space: nowrap;
+   color: #FFFFFF;
+   text-decoration: none;
+   line-height: 1.2;
+   font-weight: normal;
+   font-family: sans-serif;
+   font-size: 16px;
+   background-color: #F2D06B;
+   border-radius: 5px;
+   padding: 10px 20px;
+   cursor: pointer;
+   position: absolute;
+   top: 690px;
+   left: 130px;
+   z-index: 19;
+  }
+  .bottone:hover {
+   background-color: #E8AE1C;
+  }
+  .bottone > strong {
+   font-size: 16px;
+  }
+  /*WORK*/
+  .skills-titolo{
+    position: absolute;
+    top: 100px;
+    left: 77px;
+    z-index: 3;
+    font-size: 50px;
+    z-index: -3;
+  }
+  .work{
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-size: 30% 90%;
+  }
+  .box{ /*AI*/
+    display: flex;
+    align-items:center;
+    left: 25px;
+    top: 500px;
+    position: absolute;
+  }
+  .box span{ /*AI*/
+    left: 400px;
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  .box-2{ /*PS*/
+    display: flex;
+    align-items:center;
+    left: 25px;
+    top: 600px;
+    position: absolute;
+  }
+  .box-2 span{ /*PS*/
+    left: 400px;
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  .box-3{ /*HTML*/
+    display: flex;
+    align-items:center;
+    left: 25px;
+    top: 700px;
+    position: absolute;
+  }
+  .box-3 span{ /*HTML*/
+    left: 400px;
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  .box-4{ /*INDD*/
+    display: flex;
+    align-items:center;
+    left: 200px;
+    top: 500px;
+    position: absolute;
+  }
+  .box-4 span{ /*INDD*/
+    left: 400px;
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  .box-5{ /*PR*/
+    display: flex;
+    align-items:center;
+    left: 200px;
+    top: 600px;
+    position: absolute;
+  }
+  .box-5 span{ /*PR*/
+    left: 400px;
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  .box-6{ /*CSS*/
+    display: flex;
+    align-items:center;
+    left: 200px;
+    top: 700px;
+    position: absolute;
+  }
+  .box-6 span{ /*CSS*/
+    left: 400px;
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  /*FORM*/
+  .container{
+    top: 150px;
+    left: 0px;
+    position: absolute;
+    max-width: 800px;
+    height: 600px;
+    background: #fff;
+    box-shadow: 0 0 20px rgb(60,72,87,0.6);
+    box-sizing: border-box;
+    padding: 40px;
+  }
+}
